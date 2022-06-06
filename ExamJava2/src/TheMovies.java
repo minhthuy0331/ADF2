@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class TheMovies {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args)  {
         try (
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Cinema", "root", "");
                 PreparedStatement pstmtDelete = conn.prepareStatement("delete from movies where id = ?");
